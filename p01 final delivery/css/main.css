@@ -131,6 +131,12 @@ code {
   padding-bottom:3rem;
 }
 
+.Product1::after{
+    content: "";
+    flex: auto;
+}
+
+
 .Product1 div {
   padding:1rem;
 }
