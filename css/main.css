@@ -124,6 +124,7 @@ code {
 .col-25 {
   -ms-flex:25%;
   flex:25%;
+  width:40%;
   margin-bottom:1rem;
 }
 
@@ -144,6 +145,7 @@ code {
 .container {
   border:1px solid #E9DAC8;
   border-radius:3px;
+  width: 40%;
   padding:0.3rem 1.25rem 1.8rem;
 }
 
@@ -198,7 +200,7 @@ flex:1;
 
 
 .Product1 {
-  display:flex;
+  display: flex;
   flex-wrap:wrap;
   padding-bottom:3rem;
 }
@@ -233,11 +235,11 @@ input[type=text] {
 }
 
 label {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
-  padding:.75rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: .75rem;
 }
 
 .icon-container {
