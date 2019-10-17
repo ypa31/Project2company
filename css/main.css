@@ -124,7 +124,6 @@ code {
 .col-25 {
   -ms-flex:25%;
   flex:25%;
-  width:40%;
   margin-bottom:1rem;
 }
 
