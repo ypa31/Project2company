@@ -2,6 +2,7 @@
 @font-face {
   font-family:Otto;
   src:url(../font/Otto.ttf);
+
 }
 
 body {
@@ -12,20 +13,24 @@ body {
 }
 
 img {
-max-width: 100%;
+max-width: 80%;
 
 }
+
 .element {
   padding-bottom:2rem;
   border-top-width:.15rem;
   border-top-style:solid;
   border-top-color:#E9DAC8;
 }
-
+h1{
+  color: #403429;
+}
 h4 {
   margin-top:.2rem;
   margin-bottom:.8rem;
   color:#403429;
+
 }
 
 p {
@@ -43,23 +48,34 @@ a:hover {
   text-decoration:none;
   }
 
+
+
+
 ul,li {
   list-style:none;
   margin:0;
   padding:0;
 }
 
+nav{
+margin-top: 3rem;
+}
+
 nav li {
   display: inline;
+  padding:1rem ;
 
-  padding:1rem 2rem 1rem;
 }
 
 
-nav a:hover,nav a:focus {
-  text-decoration:none;
+nav a:hover,nav a:active, nav a:focus {
+  border-bottom: 2px solid;
+  color: #403429;
 }
-
+.active_page{
+  border-bottom: 2px solid;
+  color: #403429;
+}
 code {
   background-color:#EEE;
   display:block;
@@ -68,12 +84,18 @@ code {
 
 .button-nav {
   display:inline-block;
-  background-color:#403429;
+  background-color:#E9DAC8;
   text-decoration:none;
   transition-property:background-color;
   transition-duration:.5s;
   border-radius:3px;
   padding:.25rem;
+  width:30%;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+
 }
 
 .button-nav:hover,.button-nav:focus {
@@ -125,14 +147,61 @@ code {
   padding:0.3rem 1.25rem 1.8rem;
 }
 
+.containerabout{
+  display: flex;
+  padding-top: 2rem;
+
+}
+
+
+.containerabout div{
+
+  padding: 1rem;
+}
+.aboutimage{
+  flex:1;
+  text-align: center;
+
+}
+.textbox1{
+flex:1;
+
+
+}
+.textbox1 p{
+  width:70%;
+}
+
+.textbox1 img{
+  width:10%;
+  padding: 0 0 0 0;
+}
+.texttitle{
+  flex:0.6;
+}
+.textbox2{
+flex:1.5;
+margin-left: 4rem;
+
+}
+.textbox3{
+  margin-top: 2rem;
+
+flex:1;
+
+}
+.productdetail{
+  flex:0.5;
+
+}
+
+
+
 .Product1 {
   display:flex;
   flex-wrap:wrap;
   padding-bottom:3rem;
 }
-
-
-
 
 .Product1 div {
   padding:1rem;
@@ -206,7 +275,6 @@ span.bprice {
   color:#403429;
   padding-right:0rem;
   padding-top: 0.8rem;
-
 }
 
 .lefttext {
@@ -226,7 +294,7 @@ span.bprice {
   margin-top:2rem;
   margin-bottom:.1em;
   color:#403429;
-  padding-left:2rem;
+  padding-left:5.8rem;
 }
 
 .bodytext {
@@ -255,6 +323,9 @@ h2,h3 {
   color:#403429;
 }
 
-@media (max-width 30ems) {
+@media screen and (min-width: 768px) {
+
+
+
 
 }
