@@ -1,0 +1,47 @@
+.containerabout{
+  display: flex;
+  padding-top: 2rem;
+
+}
+
+
+.containerabout div{
+
+  padding: 1rem;
+}
+.aboutimage{
+  flex:1;
+  text-align: center;
+
+}
+.textbox1{
+flex:1;
+
+
+}
+.textbox1 p{
+  width:70%;
+}
+
+.textbox1 img{
+  width:10%;
+  padding: 0 0 0 0;
+}
+.texttitle{
+  flex:0.6;
+}
+.textbox2{
+flex:1.5;
+margin-left: 4rem;
+
+}
+.textbox3{
+  margin-top: 2rem;
+
+flex:1;
+
+}
+.productdetail{
+  flex:0.5;
+
+}
