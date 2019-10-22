@@ -26,6 +26,10 @@ max-width: 80%;
 h1{
   color: #403429;
 }
+h2,h3 {
+  margin-top:1rem;
+  color:#403429;
+}
 h4 {
   margin-top:.2rem;
   margin-bottom:.8rem;
@@ -48,13 +52,11 @@ a:hover {
   text-decoration:none;
   }
 
-
-
-
 ul,li {
   list-style:none;
   margin:0;
   padding:0;
+  color:#403429;
 }
 
 nav{
@@ -64,6 +66,7 @@ margin-top: 3rem;
 nav li {
   display: inline;
   padding:1rem ;
+
 
 }
 
@@ -91,7 +94,7 @@ code {
   border-radius:3px;
   padding:.25rem;
   width:30%;
-  margin-top: 5rem;
+
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -101,6 +104,26 @@ code {
 .button-nav:hover,.button-nav:focus {
   background-color:#94867C;
 }
+
+
+.button{
+  display:inline-block;
+
+  background-color:#E9DAC8;
+  text-decoration:none;
+  transition-property:background-color;
+  transition-duration:.5s;
+  border-radius:5px;
+  padding:.25rem;
+  width:10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.button:hover,.button:focus {
+  background-color:#94867C;
+}
+
 
 .text {
   color:#FFF;
@@ -142,7 +165,7 @@ code {
 }
 
 .container {
-  border:1px solid #E9DAC8;
+  border:1px solid #403429;
   border-radius:3px;
   width: 40%;
   padding:0.3rem 1.25rem 1.8rem;
@@ -224,14 +247,17 @@ flex:1;
 
 input[type=text] {
   display:block;
-  margin-left:auto;
-  margin-right:auto;
-  width:80%;
+
+  width: 80%;
   margin-bottom:1.25rem;
   border:1px solid #403429;
   border-radius:.2rem;
   padding:.75rem;
 }
+input[type=radio] {
+  display:inline-block;
+}
+
 
 label {
   display: block;
@@ -319,10 +345,6 @@ span.bprice {
   vertical-align:middle;
 }
 
-h2,h3 {
-  margin-top:1rem;
-  color:#403429;
-}
 
 @media screen and (min-width: 768px) {
 
