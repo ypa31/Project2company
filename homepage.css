@@ -1,0 +1,38 @@
+.containerhome{
+  display: flex;
+  padding-top: 2rem;
+
+
+
+}
+.containerhome img{
+width:100%;
+}
+
+
+.biggestimg{
+text-align: center;
+}
+.biggestimg img{
+max-width: 80%;
+}
+.sone{
+  flex:1;
+  padding-left: 8.8rem;
+
+}
+.sone img{
+
+}
+.stwo{
+flex:1;
+padding-left: 1rem;
+}
+
+
+
+.sthree{
+flex:1;
+padding-right: 8.8rem;
+padding-left: 1rem;
+}
