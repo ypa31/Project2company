@@ -23,6 +23,11 @@ max-width: 80%;
   border-top-style:solid;
   border-top-color:#E9DAC8;
 }
+
+#demo-input {
+  width: 30%;
+}
+
 h1{
   color: #403429;
 }
