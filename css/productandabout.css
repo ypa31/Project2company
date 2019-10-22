@@ -3,8 +3,6 @@
   padding-top: 2rem;
 
 }
-
-
 .containerabout div{
 
   padding: 1rem;
@@ -43,5 +41,12 @@ flex:1;
 }
 .productdetail{
   flex:0.5;
+
+}
+
+.footer{
+flex:1;
+text-align: center;
+
 
 }
