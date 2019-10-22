@@ -300,12 +300,13 @@ span.price {
 span.bprice {
   float:right;
   color:#403429;
-  padding-right:0rem;
+  padding-right:2.5rem;
   padding-top: 0.8rem;
 }
 
+
 .lefttext {
-  padding-left:0rem;
+  padding-left:2.5rem;
   font-size:1.2rem;
 }
 
@@ -346,7 +347,7 @@ span.bprice {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 500px) {
 
 
 
