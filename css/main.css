@@ -108,17 +108,22 @@ code {
 
 .button{
   display:inline-block;
-
   background-color:#E9DAC8;
   text-decoration:none;
   transition-property:background-color;
   transition-duration:.5s;
   border-radius:5px;
   padding:.25rem;
-  width:10%;
+  width:20%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-right: 8.8rem;
+
   text-align: center;
+  color: #403429;
+  font-size: 0.8rem;
+  float: right;
+
 }
 .button:hover,.button:focus {
   background-color:#94867C;
@@ -148,6 +153,7 @@ code {
   -ms-flex:25%;
   flex:25%;
   margin-bottom:1rem;
+    color: #403429;
 }
 
 .col-50 {
@@ -257,7 +263,6 @@ input[type=text] {
 input[type=radio] {
   display:inline-block;
 }
-
 
 label {
   display: block;

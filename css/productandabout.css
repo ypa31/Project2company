@@ -51,10 +51,13 @@ flex:1;
   flex:0.5;
 
 }
-
+#mssg{
+  height: 4rem;
+}
+::placeholder{
+  color:#94867C;
+}
 .footer{
 flex:1;
 text-align: center;
-
-
 }
