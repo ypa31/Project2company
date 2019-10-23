@@ -2,6 +2,7 @@
   display: flex;
   padding-top: 2rem;
 
+
 }
 .containerabout div{
 
@@ -30,6 +31,10 @@ flex:1;
   margin-left: 5rem;
   margin-top: 2rem;
 
+
+}
+.texttitle img{
+    max-width: 80%
 }
 .textbox2{
 flex:1.5;
