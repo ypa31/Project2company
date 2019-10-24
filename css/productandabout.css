@@ -2,7 +2,6 @@
   display: flex;
   padding-top: 2rem;
 
-
 }
 .containerabout div{
 
@@ -27,14 +26,7 @@ flex:1;
   padding: 0 0 0 0;
 }
 .texttitle{
-  flex:0.4;
-  margin-left: 5rem;
-  margin-top: 2rem;
-
-
-}
-.texttitle img{
-    max-width: 80%
+  flex:0.6;
 }
 .textbox2{
 flex:1.5;
@@ -51,13 +43,10 @@ flex:1;
   flex:0.5;
 
 }
-#mssg{
-  height: 4rem;
-}
-::placeholder{
-  color:#94867C;
-}
+
 .footer{
 flex:1;
 text-align: center;
+
+
 }
