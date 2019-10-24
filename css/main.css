@@ -15,7 +15,12 @@ body {
 }
 
 img {
+<<<<<<< HEAD
 max-width: 80%;
+=======
+
+
+>>>>>>> master
 }
 
 .element {
@@ -121,17 +126,22 @@ code {
 
 .button{
   display:inline-block;
-
   background-color:#E9DAC8;
   text-decoration:none;
   transition-property:background-color;
   transition-duration:.5s;
   border-radius:5px;
   padding:.25rem;
-  width:10%;
+  width:20%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-right: 8.8rem;
+
   text-align: center;
+  color: #403429;
+  font-size: 0.8rem;
+  float: right;
+
 }
 
 .button:hover,.button:focus {
@@ -161,7 +171,11 @@ code {
   -ms-flex:25%;
   flex:25%;
   margin-bottom:1rem;
+<<<<<<< HEAD
   background-color: red;
+=======
+    color: #403429;
+>>>>>>> master
 }
 
 .col-50 {
@@ -330,6 +344,7 @@ span.price {
   padding-right: 5.2rem;
 }
 
+<<<<<<< HEAD
 .summary {
   float: left;
   background-color: black;
@@ -347,6 +362,19 @@ span.price {
 #lefttext {
   padding-left: 2rem;
   font-size: 1rem;
+=======
+span.bprice {
+  float:right;
+  color:#403429;
+  padding-right:2.5rem;
+  padding-top: 0.8rem;
+}
+
+
+.lefttext {
+  padding-left:2.5rem;
+  font-size:1.2rem;
+>>>>>>> master
 }
 
 .smalltext {
@@ -385,6 +413,16 @@ span.price {
   vertical-align:middle;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
+=======
+
+@media screen and (max-width: 500px) {
+  .biggestimg img{
+  width: 50%;
+  }
+
+
+>>>>>>> master
 
 }
