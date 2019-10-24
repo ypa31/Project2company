@@ -1,4 +1,5 @@
-.DS_Store
-.jpeg
-.jpg
-.png
+.DS_Store;
+_DS_Store;
+.jpeg;
+.jpg;
+.png;
