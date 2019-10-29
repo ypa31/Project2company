@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Otto";
+  font-family: Otto;
   src:url(/font/Otto.ttf);
 }
 
 @font-face {
-  font-family: "Muli ExtraLight";
-  src:url(/font/Muli ExtraLight.ttf);
+  font-family: Muli-Light;
+  src:url(/font/Muli-Light.ttf);
 }
 
 body {
-  font-family: "Muli ExtraLight";
+  font-family: "Muli-Light";
   font-size:.8rem;
   padding:2rem;
 }
