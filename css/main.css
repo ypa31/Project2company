@@ -12,20 +12,18 @@ body {
   padding:2rem;
 }
 .element {
-  padding-bottom: 2rem;
-  border-top-style: solid;
-  width: 100%;
+  padding-bottom:2rem;
+  border-top-width:.15rem;
+  border-top-style:solid;
   border-top-color:#E9DAC8;
 }
 h1 {
   color: #403429;
 }
-
-h2, h3 {
+h2,h3 {
   margin-top:1rem;
   color:#403429;
 }
-
 h4 {
   margin-top:.2rem;
   margin-bottom:.8rem;
@@ -64,7 +62,6 @@ nav a:hover,nav a:active, nav a:focus {
   border-bottom: 2px solid;
   color: #403429;
 }
-
 code {
   background-color:#EEE;
   display:block;
@@ -132,17 +129,13 @@ code {
   flex:75%;
 }
 .col-25,.col-50,.col-75 {
-  padding:5rem 5rem;
+  padding:0 1rem;
 }
 .container {
-  border: 1px solid #403429;
-  border-radius: 7px;
-  width: 61%;
-  padding:0.3rem 1rem 1.8rem;
-  margin-left: 4.5rem;
-  margin-right: 2rem;
-  margin-top: 2rem;
-  float: left;
+  border:1px solid #403429;
+  border-radius:3px;
+  width: 40%;
+  padding:0.3rem 1.25rem 1.8rem;
 }
 .productdetail{
   flex:0.5;
@@ -160,6 +153,9 @@ code {
   max-width: 90%;
   width: 90%;
 }
+.box a img:hover{
+  filter: opacity(75%);
+}
 .imgmiddle {
   display:block;
   margin-left:auto;
@@ -174,7 +170,6 @@ input[type=text] {
   padding:.75rem;
   margin-left: 1rem;
 }
-
 input[type=radio] {
   display:inline-block;
 }
@@ -208,9 +203,8 @@ label {
   background-color:#E9DAC8;
 }
 span.price {
-  float: right;
-  color: #403429;
-  padding-right: 5.2rem;
+  float:right;
+  color:#403429;
 }
 span.bprice {
   float:right;
@@ -224,9 +218,9 @@ span.bprice {
   font-size:1.2rem;
 }
 .smalltext {
-  font-size: 0.8rem;
+  font-size:0.8rem;
   color:#94867C;
-  padding-left: 3rem;
+  padding-left:2rem;
 }
 .headings h1 {
   font-family:Otto,open-Sans;
