@@ -21,6 +21,10 @@
   max-width: 80%;
   width: 80%;
 }
+.biggestimg a img:hover,
+.sone a img:hover{
+  filter: opacity(75%);
+}
 .sone{
   display: block;
   padding-top: 2rem;
