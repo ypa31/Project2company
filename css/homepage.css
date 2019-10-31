@@ -16,6 +16,10 @@ text-align: center;
 .biggestimg img{
 max-width: 80%;
 }
+.biggestimg a img:hover,
+.sone a img:hover{
+  filter: opacity(75%);
+}
 .sone{
   flex:1;
   padding-left: 8.8rem;
