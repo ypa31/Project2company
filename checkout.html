@@ -1,159 +1,122 @@
 <!DOCTYPE html>
 
-<html lang = en><head>
-  <meta charset="utf-8">
+<html lang=en>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Checkout</title>
-
+<head>
     <meta charset="utf-8">
-    <link href="css/checkout.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Checkout</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/productandabout.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
 
-  <link href="css/productandabout.css" rel="stylesheet">
-  </head>
-
-  <body>
+<body>
 
     <header>
-
-      <div class ="containerabout">
-      <div class = "containerabout">
+        <div class="containernavigation">
+            <div class="dropdown">
+                <button class="dropbtn">≣</button>
+                <div class="dropdown-content">
+                    <a href="finalindex.html">Home</a>
+                    <a href="productlist.html">Product</a>
+                    <a href="Event.html">Event</a>
+                    <a href="checkout.html">Checkout</a>
+                    <a href="Contact.html">Contact us</a>
+                    <a href="About.html">About</a>
+                </div>
+            </div>
             <div class="texttitle">
-        <a href="finalindex.html">
-          <img src="img/title.png"
-          alt="Here suppose to be an title image">
-      </div>
-    <div class="textbox2">
-      <nav>
-        <ul>
-           <li><a href="finalindex.html">Home</a></li>
-          <li><a href="productlist.html">Product</a></li>
-          <li><a href="Event.html">Event</a></li>
-          <li><a href="checkout.html"class="active_page">Checkout</a></li>
-          <li><a href="Contact.html" >Contact us</a></li>
-          <li><a href="About.html" >About</a></li>
-
-        </ul>
-      </nav>
-</div>
-
-<div class = "textbox3">
-<input type="text" id="Search" name="searchwords" placeholder="Search">
-
-  </div>
-</div>
-
-</header>
-
-    <section class="element">
-      <h3>Checkout Cart</h3>
-
-    <div class="container">
-
-        <div id="details">
-          <p>PRODUCT</p>
-          <p></p>
-          <p></p>
-          <p>PRICE</p>
-          <p></p>
-          <p>QUANTITY</p>
-          <p></p>
-          <p>TOTAL</p>
+                <a href="finalindex.html">
+                    <img src="img/title.png" alt="Here suppose to be an title image">
+                </a>
+            </div>
+            <div class="searchicon">
+                <a href="finalindex.html">
+                    <img src="img/searchmenu.png" alt="Here suppose to be an menu icon">
+                </a>
+            </div>
+            <div class="textbox2">
+                <nav>
+                    <ul>
+                        <li><a href="finalindex.html">Home</a></li>
+                        <li><a href="productlist.html">Product</a></li>
+                        <li><a href="Event.html">Event</a></li>
+                        <li><a href="checkout.html" class="active_page">Checkout</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="textbox3">
+                <input type="text" id="Search" name="searchwords" placeholder="Search">
+            </div>
         </div>
+      </header>
 
-    <a href="detaildryflower.html"><img src="img/driedflowers1.jpg" alt text="dried flowers"></a>
-        <h3>
-          <span class="price">$24.99</span>
-          <div id="lefttext"><p>Dry Flowers</p>
-            $24.99
-            - 1 +
-          </div>
-        </h3>
-          <p class="smalltext">Option: All</p>
+        <div class="containercheckout">
+            <div class="itemlist">
 
-    <a href="detailpaperlamp.html"><img src="img/paperwhale1.jpg" alt text="paper whale"></a>
-      <h3>
-        <span class="price">$34.99</span>
-        <div id="lefttext"><p>Paper Lamp</p>  $34.99  - 1 +
-        </div>
-      </h3>
-        <p class="smalltext">Option: Whale</p>
+                <div class="itemname">
 
-      <img src="img/ceramicvase.jpg" alt text="ceramic vase">
-      <h3>
-        <span class="price">$21.99</span>
-        <div id="lefttext"><p>Ceramic Vase</p>
-          $21.99
-          - 1 +
-        </div>
-      </h3>
-        <p class = "smalltext">Option: Blue</p>
+                    <h1>Product</h1>
 
+                    <a href="detailpaperlamp.html"><img src="img/paperwhale1.jpg" alt="paperwhale pic"></a>
+                </div>
 
-    </div>
+                <div class="itemdescription">
+                    <h2>Description </h2>
+                    <h3>Paper Lamp</h3>
+                    <p>Options: Whale</p>
 
+                </div>
 
-    </section>
+                <div class="itemquantity">
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue()">-</div>
+                        <input type="number" id="number" value="1" />
+                        <div class="value-button" id="increase" onclick="increaseValue()">+</div>
+                    </form>
+                </div>
 
-      <section class="summary">
-        <div id="sum">
-          <b>Order Summary</b>
-          <p>Subtotal</p> <b>$ 81.97</b>
-          <p>Shipping & Handling</p> <b>FREE</b>
-          <p>GST/PST</p>
-          <b>Estimated Total</b> <b>$ 81.97</b>
-
-          <input type="submit" value="Proceed to Payment" class="checkout">
-        </div>
-      </section>
-
-<!--
-        <div class="row">
-        <div class="col-75">
-      <div class="container">
-        <form action="/action_page.php">
-
-          <div class="row">
-
-            <div class="col-50">
-              <h3>Payment</h3>
-
-              <div class="col-25">
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="Legal Name">
-                <label for="ccnum">Credit Card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="6000-XXXX-XXXX-XXXX">
-                <label for="expmonth">Expiry Date</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="Month/Year">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="XXX">
-              </div>
-
+                <div class="itemtotal">
+                    <h2>Total</h2>
+                    <p> $34.99</p>
+                </div>
             </div>
 
-          </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-          </label>
-          <input type="submit" value="Continue to Checkout" class="checkout">
-        </form>
-      </div>
-    </div>
+            <div class="subtotal">
 
-      </section>
-<div class="footer">
-    <nav>
-      <ul>
-        <li><a href="styleguide.html">Styleguide</a></li>
-        <li><a href="citation.html">Citation</a></li>
-        <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
-      </ul>
-    </nav>
-    </div>
+                <section class="totalamount">
+                    <div id="sum">
+                        <h2>Order Summary</h2>
+                        <b>Subtotal</b>
+                        <p>$ 24.99</p>
+                        <b>Shipping</b>
+                        <p>FREE</p>
 
--->
-        </body>
-      </html>
+                        <b>Estimated Total</b>
+                        <p>$ 24.99</p>
+
+                        <a class="button-nav" href="payment.html">Proceed</a>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="styleguide.html">Styleguide</a></li>
+                    <li><a href="citation.html">Citation</a></li>
+                    <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
+                </ul>
+            </nav>
+        </div>
+</body>
+
+</html>

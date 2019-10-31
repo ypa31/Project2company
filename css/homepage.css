@@ -1,41 +1,73 @@
+@font-face {
+  font-family:Otto;
+  src:url(../font/Otto.ttf);
+}
+@font-face {
+  font-family:Muli-Light;
+  src:url(../font/Muli-Light.ttf);
+}
 .containerhome{
   display: flex;
   padding-top: 2rem;
 }
-.containerhome img{
-width:100%;
-}
-
 .containerhome p{
-padding-top: 0rem;
-margin-bottom: 0.1rem;
+  padding-top: 0rem;
+  margin-bottom: 0.1rem;
 }
 .biggestimg{
-text-align: center;
+  text-align: center;
 }
 .biggestimg img{
-max-width: 80%;
+  max-width: 80%;
+  width: 80%;
 }
 .sone{
-  flex:1;
-  padding-left: 8.8rem;
-
+  display: block;
+  padding-top: 2rem;
+  padding-left: 7rem;
+  padding-right: 6rem;
 }
 .sone img{
-
+  max-width: 30%;
+  width: 30%;
+  padding-left: 1.4rem;
 }
-.stwo{
-flex:1;
-padding-left: 1rem;
+.infotext{
+  display: flex;
+  width: 90%;
+  margin-left:4rem;
 }
-
-.sthree{
-flex:1;
-padding-right: 8.8rem;
-padding-left: 1rem;
+.infoboxone{
+  flex: 1;
+  margin-left: 4.5rem;
 }
-
+.infoboxtwo{
+  flex: 1;
+  margin-left: 1rem;
+}
+.infoboxthree{
+  flex: 1;
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
 .dates{
   font-size: 10px;
-    color: #403429;
+  color: #403429;
+}
+@media screen and (min-width:0px) and (max-width:1280px){
+  .infotext{
+    display: none;
+  }
+  .sone{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    text-align: center;
+  }
+  .sone img{
+    max-width: 80%;
+    width: 80%;
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
 }
