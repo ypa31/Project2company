@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/productandabout.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="containernavigation">
+            <div class="dropdown">
+                <button class="dropbtn">≣</button>
+                <div class="dropdown-content">
+                    <a href="finalindex.html">Home</a>
+                    <a href="productlist.html">Product</a>
+                    <a href="Event.html">Event</a>
+                    <a href="checkout.html">Checkout</a>
+                    <a href="Contact.html">Contact us</a>
+                    <a href="About.html">About</a>
+                </div>
+            </div>
+            <div class="texttitle">
+                <a href="finalindex.html">
+                    <img src="img/title.png" alt="Here suppose to be an title image">
+                </a>
+            </div>
+            <div class="searchicon">
+                <a href="finalindex.html">
+                    <img src="img/searchmenu.png" alt="Here suppose to be an menu icon">
+                </a>
+            </div>
+            <div class="textbox2">
+                <nav>
+                    <ul>
+                        <li><a href="finalindex.html">Home</a></li>
+                        <li><a href="productlist.html">Product</a></li>
+                        <li><a href="Event.html">Event</a></li>
+                        <li><a href="checkout.html" class="active_page">Checkout</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                        <li><a href="About.html">About</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="textbox3">
+                <input type="text" id="Search" name="searchwords" placeholder="Search">
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="containercheckout">
+        <div class="itemlist">
+
+            <div class="itemname">
+                <h1>Product</h1>
+                <a href="detaildryflower.html"><img src="img/driedflowers1.jpg" alt="dried flowers"></a>
+            </div>
+
+            <div class="itemdescription">
+                <h2>Description </h2>
+                <h3>Dry Flowers</h3>
+                <p>Options: All</p>
+            </div>
+
+            <div class="itemquantity">
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()">-</div>
+                    <input type="number" id="number" value="1" />
+                    <div class="value-button" id="increase" onclick="increaseValue()">+</div>
+                </form>
+            </div>
+
+            <div class="itemtotal">
+                <h2>Total</h2>
+                <p> $24.99</p>
+            </div>
+        </div>
+
+        <div class="subtotal">
+            <section class="totalamount">
+                <div id="sum">
+                    <h2>Order Summary</h2>
+                    <b>Subtotal</b>
+                    <p>$ 24.99</p>
+                    <b>Shipping</b>
+                    <p>FREE</p>
+                    <b>Estimated Total</b>
+                    <p>$ 24.99</p>
+                    <a class="button-nav" href="payment.html">Proceed</a>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <nav>
+            <ul>
+                <li><a href="styleguide.html">Styleguide</a></li>
+                <li><a href="citation.html">Citation</a></li>
+                <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

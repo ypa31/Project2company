@@ -1,148 +1,118 @@
 <!DOCTYPE html>
-<html>
 
-  <head>
-    <title> Product</title>
+<html lang=en>
+
+<head>
     <meta charset="utf-8">
-    <link href="css/main.css" rel="stylesheet">
-  <link href="css/productandabout.css" rel="stylesheet">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
+    <title>Product</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/productandabout.css" rel="stylesheet">
+</head>
+
+<body>
 
     <header>
-      <div class = "containerabout">
-      <div class="texttitle">
-      <h1 class="titletext">La Maison</h1>
-    </div>
-    <div class="textbox2">
-      <nav>
-        <ul>
-           <li><a href="finalindex.html">Home</a></li>
-          <li><a href="productlist.html" class="active_page">Product</a></li>
-          <li><a href="Event.html" > Event </a></li>
-          <li><a href="checkout.html">Checkout</a></li>
-          <li><a href="Contact.html">Contact us</a></li>
-          <li><a href="About.html" >About</a></li>
+        <div class="containernavigation">
+            <div class="dropdown">
+                <button class="dropbtn">≣</button>
+                <div class="dropdown-content">
+                    <a href="finalindex.html">Home</a>
+                    <a href="productlist.html">Product</a>
+                    <a href="Event.html">Event</a>
+                    <a href="checkout.html">Checkout</a>
+                    <a href="Contact.html">Contact us</a>
+                    <a href="About.html">About</a>
+                </div>
+            </div>
 
-        </ul>
-      </nav>
+            <div class="texttitle">
+                <a href="finalindex.html">
+                    <img src="img/title.png" alt="Here suppose to be an title image">
+                </a>
+            </div>
 
-</div>
+            <div class="searchicon">
+                <a href="finalindex.html">
+                    <img src="img/searchmenu.png" alt="Here suppose to be an menu icon">
+                </a>
+            </div>
+            <div class="textbox2">
+                <nav>
+                    <ul>
+                        <li><a href="finalindex.html">Home</a></li>
+                        <li><a href="productlist.html" class="active_page">Product</a></li>
+                        <li><a href="Event.html">Event</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="textbox3">
+                <input type="text" id="Search" name="searchwords" placeholder="Search">
+            </div>
+        </div>
+      </header>
 
-<div class = "textbox3">
-<input type="text" id="Search" name="searchwords" placeholder="Search">
+        <section class="element">
+            <h3>Product List</h3>
+            <div class="Product1">
+                <div class="box">
+                    <a href="detailpaperlamp.html"><img src="img/paperwhale1.jpg" alt="Product Image" class="imgmiddle"></a>
+                    <span class="bprice">$34.99</span>
+                    <a href="detailpaperlamp.html"><h4 class="lefttext">Paper Lamp</h4></a>
+                    <h5> <span class="bprice">  <a href="detailpaperlamp.html">Click for details </a></span> </h5>
+                </div>
+                <div class="box">
+                    <a href="detaildryflower.html"><img src="img/driedflowers1.jpg" alt="Product Image" class="imgmiddle"></a>
+                    <span class="bprice">$24.99</span>
+                    <a href="detaildryflower.html"><h4 class="lefttext">Dry Flower</h4></a>
+                    <h5> <span class="bprice">  <a href="detaildryflower.html">Click for details </a></span> </h5>
+                </div>
+                <div class="box">
+                    <a href="detaildryflower.html"><img src="img/stickers.jpg" alt="Product Image" class="imgmiddle"></a>
+                    <span class="bprice">$9.99</span>
+                    <a href="detailpaperlamp.html"><h4 class="lefttext">Alphabetical Stickers</h4></a>
+                    <h5> <span class="bprice">  <a href="detailpaperlamp.html">Click for details </a></span> </h5>
+                </div>
 
-  </div>
-</div>
+                <div class="box">
+                    <a href="detaildryflower.html"><img src="img/ceramicvase.jpg" alt="Product Image" class="imgmiddle"></a>
+                    <span class="bprice">$21.99</span>
+                    <a href="detailpaperlamp.html">
+                        <h4 class="lefttext">Ceramic vase</h4>
+                    </a>
+                    <h5> <span class="bprice">  <a href="detailpaperlamp.html">Click for details </a></span> </h5>
+                </div>
+                <div class="box">
+                    <a href="detailpaperlamp.html"><img src="img/scissors.jpg" alt="Product Image" class="imgmiddle"></a>
+                    <span class="bprice">$3.99</span>
+                    <a href="detaildryflower.html"><h4 class="lefttext">Scissor</h4></a>
+                    <h5> <span class="bprice">  <a href="detaildryflower.html">Click for details </a></span> </h5>
+                </div>
+                <div class="box">
+                    <a href="detailpaperlamp.html"><img src="img/diybag.jpg" alt="Product Image" class="imgmiddle"></a>
+                    <span class="bprice">$1.99</span>
+                    <a href="detaildryflower.html"><h4 class="lefttext">DIY Bags</h4></a>
+                    <h5> <span class="bprice">  <a href="detaildryflower.html">Click for details </a></span> </h5>
+                </div>
 
-</header>
+            </div>
 
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-        <div class="Product1">
+        </section>
 
-          <div class = "box">
-
-              <a href="detailpaperlamp.html" ><img src="img/paperwhale1.jpg"  alt="Product Image" class="imgmiddle" ></a>
-            <p class ="titletext">Product Name</p>
-            <span class="bprice" >$34.99</span>
-            <h4 class="lefttext">Paper Lamp</h4>
-              <h5> <span class="bprice">  <a href="detailpaperlamp.html">Click for details </a></span> </h5>
-
-                <h5 class="smalltext">
-                  Lorem Ipsum is simply dummy text<br>
-                   of the printing and typesetting industry.<br>
-                   Lorem Ipsum has been the industry's <br>
-                   standard dummy text ever since the <br>1500s,
-                   when an unknown printer.<br></h5>
-
-
-
-               </div>
-        <div class = "box">
-
-          <a href="detaildryflower.html"><img src="img/driedflowers1.jpg" alt="Product Image" class="imgmiddle"></a>
-          <p class ="titletext">Product Name</p>
-          <span class="bprice" >$24.99</span>
-          <h4 class="lefttext">Dry Flower</h4>
-            <h5> <span class="bprice">  <a href="detaildryflower.html">Click for details </a></span> </h5>
-
-              <h5 class="smalltext">
-                Lorem Ipsum is simply dummy text<br>
-                 of the printing and typesetting industry.<br>
-                 Lorem Ipsum has been the industry's <br>
-                 standard dummy text ever since the <br>1500s,
-                 when an unknown printer.<br></h5>
-
-             </div>
-             <div class = "box">
-
-                 <a href="https://www.google.ca"><img src="img/stickers.jpg" alt="Product Image" class="imgmiddle"></a>
-               <p class ="titletext">Product Name</p>
-               <span class="bprice" >$9.99</span>
-               <h4 class="lefttext">Alphabetical Stickers</h4>
-                 <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-                  </div>
-</div>
-
-<div class = "Product1">
-          <div class = "box">
-
-              <a href="https://www.google.ca"><img src="img/ceramicvase.jpg" alt="Product Image" class="imgmiddle"></a>
-            <p class ="titletext" >Product Name</p>
-            <span class="bprice" >$21.99</span>
-            <h4 class="lefttext">Ceramic vase</h4>
-              <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-
-                <h5 class="smalltext">
-                  Lorem Ipsum is simply dummy text<br>
-                   of the printing and typesetting industry.<br>
-                   Lorem Ipsum has been the industry's <br>
-                   standard dummy text ever since the <br>1500s,
-                   when an unknown printer.<br></h5>
-
-
-               </div>
-        <div class = "box">
-
-          <a href="https://www.google.ca"><img src="img/scissors.jpg" alt="Product Image" class="imgmiddle"></a>
-
-          <p class ="titletext" >Product Name</p>
-          <span class="bprice" >$3.99</span>
-          <h4 class="lefttext">Scissor</h4>
-
-            <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-
-             </div>
-             <div class = "box">
-
-                 <a href="https://www.google.ca" ><img src="img/diybag.jpg" alt="Product Image" class="imgmiddle"></a>
-               <p class ="titletext" >Product Name</p>
-               <span class="bprice" >$1.99</span>
-               <h4 class="lefttext">DIY Bags</h4>
-                 <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-
-                   <h5 class="smalltext">
-                      Lorem Ipsum is simply dummy text<br>
-                      of the printing and typesetting industry.<br>
-                      Lorem Ipsum has been the industry's <br>
-                      standard dummy text ever since the <br>1500s,
-                      when an unknown printer.<br></h5>
-
-                  </div>
-
+        <div class="footer">
+            <nav>
+                <ul>
+                    <li><a href="styleguide.html">Styleguide</a></li>
+                    <li><a href="citation.html">Citation</a></li>
+                    <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
+                </ul>
+            </nav>
         </div>
 
-      </section>
-<div class="footer">
-    <nav>
-      <ul>
-        <li><a href="styleguide.html">Styleguide</a></li>
-        <li><a href="citation.html">Citation</a></li>
-        <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
-      </ul>
-    </nav>
-    </div>
-        </body>
-      </html>
+</body>
+
+</html>

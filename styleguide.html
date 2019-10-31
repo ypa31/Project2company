@@ -1,343 +1,346 @@
 <!DOCTYPE html>
 
-<html lang = en><head>
-  <meta charset="utf-8">
+<html lang=en>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styleguide</title>
-
     <link href="css/main.css" rel="stylesheet">
-  <link href="css/productandabout.css" rel="stylesheet">
-  </head>
+    <link href="css/productandabout.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
 
-  <body>
+<body>
 
     <header>
-      <div class = "containerabout">
-      <div class="texttitle">
-      <h1 class="titletext">La Maison</h1>
-    </div>
-    <div class="textbox2">
-      <nav>
-        <ul>
-           <li><a href="finalindex.html">Home</a></li>
-          <li><a href="productlist.html">Product</a></li>
-          <li><a href="Event.html" >Event</a></li>
-          <li><a href="checkout.html">Checkout</a></li>
-          <li><a href="Contact.html">Contact us</a></li>
-          <li><a href="About.html" >About</a></li>
+        <div class="containernavigation">
+            <div class="dropdown">
+                <button class="dropbtn">≣</button>
+                <div class="dropdown-content">
+                    <a href="finalindex.html">Home</a>
+                    <a href="productlist.html">Product</a>
+                    <a href="Event.html">Event</a>
+                    <a href="checkout.html">Checkout</a>
+                    <a href="Contact.html">Contact us</a>
+                    <a href="About.html">About</a>
+                </div>
+            </div>
+            <div class="texttitle">
+                <a href="finalindex.html">
+                    <img src="img/title.png" alt="Here suppose to be an title image">
+                </a>
+            </div>
+            <div class="searchicon">
+                <a href="finalindex.html">
+                    <img src="img/searchmenu.png" alt="Here suppose to be an menu icon">
+                </a>
+            </div>
+            <div class="textbox2">
+                <nav>
+                    <ul>
+                        <li><a href="finalindex.html">Home</a></li>
+                        <li><a href="productlist.html">Product</a></li>
+                        <li><a href="Event.html">Event</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="Contact.html">Contact us</a></li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="textbox3">
+                <input type="text" id="Search" name="searchwords" placeholder="Search">
+            </div>
+        </div>
+      </header>
 
-        </ul>
-      </nav>
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+            <h1>Interactive Elements</h1>
 
-</div>
+            <section class="element">
+                <h2>In-text link</h2>
+                <a href="https://www.google.ca">Intext-link </a>
+            </section>
 
-<div class = "textbox3">
-<input type="text" id="Search" name="searchwords" placeholder="Search">
+            <!-- Default Button styling section -->
+            <section class="element">
 
-  </div>
-</div>
+                <h3>Navigation Link</h3>
+                <a href="#interactive_elements">Navigation Link</a>
 
-</header>
+                <h4>CSS selector:</h4>
+                <p>.button-nav</p>
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+                <h4>Rendered element:</h4>
+                <a class="button-nav" href="#">Default Button</a>
 
+            </section>
 
-      <section class="element">
-        <h3>In-text link</h3>
-        <a href="https://www.google.ca">Intext-link </a>
-      </section>
+            <section class="element">
+                <h3>Submit/Reset Buttons</h3>
+                <form>
+                    <button type="submit" value="Submit" class="button">Submit</button>
+                    <button type="reset" value="Reset" class="button">Reset</button>
+                </form>
+            </section>
 
+            <section class="element">
+                <h3>Text Input Field with Label</h3>
+                <p>This is the label for the text input </p>
+                <br>
+                <input id="demo-input" type="text">
+            </section>
 
-      <!-- Default Button styling section -->
-      <section class="element">
+            <section class="element">
+                <h3>Radio Button with Label</h3>
+                <p>This is the label for the radio button </p>
+                <br>
+                <p>
+                    <input type="radio" name="TF" value="Yes">Yes</p>
+                <p>
+                    <input type="radio" name="TF" value="No">No</p>
+                <!--Same "name" = same group-->
+            </section>
 
-        <h3>Navigation Link</h3>
-        <a href="#interactive_elements">Navigation Link</a>
+            <section class="element">
+                <h3>Image as a Link</h3>
+                <a href="https://www.google.ca">
+                    <img src="img/stickers.jpg" alt="Here suppose to be an image">
+                </a>
+            </section>
 
-
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-
-      </section>
-
-
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-        <form >
-        <button type="submit" value="Submit"class="button">Submit</button>
-        <button type="reset" value="Reset" class="button">Reset</button>
-      </form>
-      </section>
-
-
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-        <p>This is the label for the text input </p><br>
-        <input id = "demo-input" type="text">
-      </section>
-
-
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-        <p>This is the label for the radio button </p><br>
-      <p>  <input type="radio" name="TF" value="Yes">Yes</p>
-      <p>    <input type="radio" name="TF" value="No">No</p> <!--Same "name" = same group-->
-      </section>
-
-
-      <section class="element">
-        <h3>Image as a Link</h3>
-        <a href="https://www.google.ca">
-  <img src="img/stickers.jpg"
-     alt="Here suppose to be an image">
-
-   </a>
-      </section>
-
-
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
-
-
-
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
-
-      <section class="element">
-        <h3>Headings</h3>
-        <section class = "headings">
-          <h1 class="titletext">heading1</h1>
-          <h2 class="bodytext">heading2</h2>
-          <h3 class="bodytext">heading3</h3>
-          <h4 class="bodytext">heading4</h4>
         </section>
-      </section>
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-      <section class="element">
-        <h3>Paragraphs</h3>
-        <p class="bodytext"> This is a paragraph</p>
-      </section>
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
+            <h1>Text Elements</h1>
 
-      <section class="element">
-        <h3>Numbered Lists</h3>
-        <ol>
-          <li class="bodytext">Item One</li>
-          <li class="bodytext">Item Two</li>
-          <li class="bodytext">Item Three</li>
-        </ol>
-      </section>
+            <section class="element">
+                <h2>Headings</h2>
+                <section class="headings">
+                    <h1>heading1</h1>
+                    <h2>heading2</h2>
+                    <h3>heading3</h3>
+                    <h4>heading4</h4>
+                </section>
+            </section>
 
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+            <section class="element">
+                <h3>Paragraphs</h3>
+                <p class="bodytext"> This is a paragraph</p>
+            </section>
 
+            <section class="element">
+                <h3>Numbered Lists</h3>
+                <ol>
+                    <li class="bodytext">Item One</li>
+                    <li class="bodytext">Item Two</li>
+                    <li class="bodytext">Item Three</li>
+                </ol>
+            </section>
 
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+            <h1>Combined Elements</h1>
 
+            <section class="element">
+                <h2>Product/Service Listing</h2>
+                <div class="Product1">
 
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-        <div class="Product1">
+                    <div class="box">
 
-          <div class = "box">
+                        <a href="detailpaperlamp.html"><img src="img/paperwhale1.jpg" alt="Product Image" class="imgmiddle"></a>
+                        <span class="bprice">$34.99</span>
+                        <h4 class="lefttext">Paper Lamp</h4>
+                        <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                    </div>
+                    <div class="box">
 
-              <a href="https://www.google.ca" ><img src="img/diylamp.jpg"  alt="Product Image" class="imgmiddle" ></a>
-            <span class="bprice" >$34.99</span>
-            <h4 class="lefttext">Paper Lamp</h4>
-              <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-               </div>
-        <div class = "box">
+                        <a href="detaildryflower.html"><img src="img/driedflowers1.jpg" alt="Product Image" class="imgmiddle"></a>
+                        <span class="bprice">$24.99</span>
+                        <h4 class="lefttext">Dry Flower</h4>
+                        <h5> <span class="bprice">  <a href="detaildryflower.html">Click for details </a></span> </h5>
+                    </div>
+                    <div class="box">
 
-          <a href="detaildryflower.html"><img src="img/dryflower.jpg" alt="Product Image" class="imgmiddle"></a>
-          <span class="bprice" >$24.99</span>
-          <h4 class="lefttext">Dry Flower</h4>
-            <h5> <span class="bprice">  <a href="detaildryflower.html">Click for details </a></span> </h5>
-             </div>
-             <div class = "box">
+                        <a href="detailpaperlamp.html"><img src="img/stickers.jpg" alt="Product Image" class="imgmiddle"></a>
+                        <span class="bprice">$9.99</span>
+                        <h4 class="lefttext">Alphabetical Stickers</h4>
+                        <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                    </div>
+                </div>
+                <div class="Product1">
+                    <div class="box">
 
-                 <a href="https://www.google.ca"><img src="img/stickers.jpg" alt="Product Image" class="imgmiddle"></a>
-               <span class="bprice" >$9.99</span>
-               <h4 class="lefttext">Alphabetical Stickers</h4>
-                 <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                        <a href="detaildryflower.html"><img src="img/ceramicvase.jpg" alt="Product Image" class="imgmiddle"></a>
+                        <span class="bprice">$21.99</span>
+                        <h4 class="lefttext">Ceramic vase</h4>
+                        <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                    </div>
+                    <div class="box">
+
+                        <a href="detailpaperlamp.html"><img src="img/scissors.jpg" alt="Product Image" class="imgmiddle"></a>
+                        <span class="bprice">$3.99</span>
+                        <h4 class="lefttext">Scissor</h4>
+
+                        <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                    </div>
+                    <div class="box">
+
+                        <a href="detaildryflower.html"><img src="img/diybag.jpg" alt="Product Image" class="imgmiddle"></a>
+                        <span class="bprice">$1.99</span>
+                        <h4 class="lefttext">DIY Bags</h4>
+                        <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                    </div>
+                </div>
+
+            </section>
+
+          </section>
+
+            <section class="element">
+                <div class="textbox1">
+
+                    <h2>Payment Information</h2>
+                    <div class="col-25" id="contactpage">
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Legal Name">
+                        <label for="ccnum">Credit Card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="6000-XXXX-XXXX-XXXX">
+                        <label for="expmonth">Expiry Date</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="Month/Year">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="XXX">
+
+                    </div>
+                    <a href="paymentconfirmation.html">
+                        <button type="submit" value="Submit" class="button" id="submitbutton">Submit</button>
+                    </a>
+                </div>
+            </section>
+
+            <section class="element">
+              <div class="containercheckout">
+                  <div class="itemlist">
+
+                      <div class="itemname">
+
+                          <h1>Product</h1>
+
+                          <a href="detailpaperlamp.html"><img src="img/paperwhale1.jpg" alt="paperwhale pic"></a>
+                      </div>
+
+                      <div class="itemdescription">
+                          <h2>Description </h2>
+                          <h3>Paper Lamp</h3>
+                          <p>Options: Whale</p>
+
+                      </div>
+
+                      <div class="itemquantity">
+                          <form>
+                              <div class="value-button" id="decrease" onclick="decreaseValue()">-</div>
+                              <input type="number" id="number" value="1" />
+                              <div class="value-button" id="increase" onclick="increaseValue()">+</div>
+                          </form>
+                      </div>
+
+                      <div class="itemtotal">
+                          <h2>Total</h2>
+                          <p> $34.99</p>
+                      </div>
                   </div>
-</div>
-    <div class="Product1">
-          <div class = "box">
 
-              <a href="https://www.google.ca"><img src="img/ceramicvase.jpg" alt="Product Image" class="imgmiddle"></a>
-            <span class="bprice" >$21.99</span>
-            <h4 class="lefttext">Ceramic vase</h4>
-              <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-               </div>
-        <div class = "box">
+                  <div class="subtotal">
 
-          <a href="https://www.google.ca"><img src="img/scissors.jpg" alt="Product Image" class="imgmiddle"></a>
-          <span class="bprice" >$3.99</span>
-          <h4 class="lefttext">Scissor</h4>
+                      <section class="totalamount">
+                          <div id="sum">
+                              <h2>Order Summary</h2>
+                              <b>Subtotal</b>
+                              <p>$ 24.99</p>
+                              <b>Shipping</b>
+                              <p>FREE</p>
 
-            <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
-             </div>
-             <div class = "box">
+                              <b>Estimated Total</b>
+                              <p>$ 24.99</p>
 
-                 <a href="https://www.google.ca" ><img src="img/diybag.jpg" alt="Product Image" class="imgmiddle"></a>
-               <span class="bprice" >$1.99</span>
-               <h4 class="lefttext">DIY Bags</h4>
-                 <h5> <span class="bprice">  <a href="https://www.google.ca">Click for details </a></span> </h5>
+                              <a class="button-nav" href="payment.html">Proceed</a>
+
+                          </div>
+                      </section>
+
                   </div>
-</div>
-
-
-      </section>
-
-      <section class="element">
-        <h3>Payment Form</h3>
-        <div class="row">
-        <div class="col-75">
-      <div class="container">
-        <form action="/action_page.php">
-
-          <div class="row">
-
-
-            <div class="col-50">
-              <h3>Payment</h3>
-
-              <div class="col-50">
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="Legal Name">
-                <label for="ccnum">Credit Card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="6000-XXXX-XXXX-XXXX">
-                <label for="expmonth">Expiry Date</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="Month/Year">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="XXX">
               </div>
+            </section>
 
+            <!-- // COMBINED ELEMENTS SECTION -->
+
+            <!-- BRANDING IDEAS SECTION // -->
+            <section class="element">
+                <h1>Branding Ideas</h1>
+                <h2>What does the company do, or offer?</h2>
+                <h3>Company Name: La Maison</h3>
+                <p> La Maison is a Vancouver based lifestyle retail corporation that carries a variety of arts, crafts, lifestyle products for local designers, fans of DIY decorating, and minimalism.
+                </p>
+                <p> Established in 2013, La Maison aims to bring together local craft lovers and artists to create a platform for art lovers to collaborate. Our goal is to promote environmentally friendly quality goods at an affordable price. From 100% recycled material to all organic materials, we aim for a better city for generations to come.
+                </p>
+                <h3>Who is the company to potential customers? (as a person)</h3>
+                <p>Designers
+                    <br> Makers
+                    <br> DIY Decorators
+                    <br> Fan of Minimalism</p>
+
+                <h3>Why might this company entice someone to purchase a product or service</h3>
+                <p>Style of Minimalism
+                    <br> Aesthetic product pictures showing the features which deliver a cozy and warm feeling
+                    <br> Detail information about the product
+                    <br> Showing examples of what you can do with this product
+                    <br> Constantly value deal and promotions
+                </p>
+
+                <h3>Font One:</h3>
+                <p class="titletext">
+                    La Maison
+                </p>
+
+                <h3>Font Two:</h3>
+                <p class="bodytext">
+                    Muli This is the body text
+                </p>
+
+                <h4>ColorPalette</h4>
+                <img src="img/colorp.png" alt="here is a color pallette">
+
+                <h4>Potential Imagery</h4>
+                <div class="rowgrid">
+                    <div class="column">
+                        <img src="img/scissors.jpg" alt="scissors">
+                        <img src="img/diybag.jpg" alt="diy bag">
+                        <img src="img/dryflower.jpg" alt="dry flower">
+                        <img src="img/diylamp.jpg" alt="diy lamp">
+                        <img src="img/stickers.jpg" alt="stickers">
+                        <img src="img/ceramicvase.jpg" alt="ceramicvase">
+
+                    </div>
+                </div>
+            </section>
+            <!-- // BRANDING IDEAS SECTION -->
+            <div class="footer">
+                <nav>
+                    <ul>
+                        <li><a href="styleguide.html" class="active_page">Styleguide</a></li>
+                        <li><a href="citation.html">Citation</a></li>
+                        <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
+                    </ul>
+                </nav>
             </div>
 
-          </div>
-          <label>
-            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-          </label>
-          <input type="submit" value="Continue to Checkout" class="checkout">
-        </form>
-      </div>
-    </div>
+</body>
 
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
-
-
-
-  <div class="col-25">
-    <div class="container">
-      <h2>Your Cart
-        <span class="price" >
-
-          <b>3</b>
-        </span>
-      </h2>
-
-
-      <h3><class="lefttext">Product 1  <span class="price">$29.99</span></h3>
-
-      <p class="smalltext"> quantity: #</p>
-      <p class = "smalltext"> size:</p>
-
-
-      <h3><class="lefttext">Product 2<span class="price">$24.99</span></h3>
-      <p class="smalltext"> quantity: #</p>
-      <p class = "smalltext"> size:</p>
-      <h3><class="lefttext">Product 3<span class="price">$8.99</span></h3>
-      <p class="smalltext"> quantity: #</p>
-      <p class = "smalltext"> size:</p>
-
-
-
-
-      <h3>Total <span class="price"><b>$40</b></span></h3>
-
-  <input type="submit" value="Proceed to Payment" class="checkout">
-    </div>
-  </div>
-
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-  <!-- BRANDING IDEAS SECTION // -->
-  <section class="element">
-    <h3>Branding Ideas</h3>
-    <h4>What does the company do, or offer?</h4>
-    <p>Company Name: La Maison</p>
-    <p>La Maison is a Vancouver based lifestyle retail corporation that carries a variety of arts, crafts, lifestyle products for local designers, fan of DIY decorating and minimalism. </p>
-    <h4>Who is the company to potential customers? (as a person)</h4>
-    <p>Designers<br>
-      Makers<br>
-      DIY Decorators<br>
-      Fan of Minimalism</p>
-
-    <h4>Why might this company entice someone to purchase a product or service</h4>
-    <p>Style of Minimalism<br>
-      Aesthetic product pictures showing the features which deliver a cozy and warm feeling<br>
-      Detail information about the product<br>
-      Showing examples of what you can do with this product<br>
-      Constantly value deal and promotions
-    </p>
-
-
-<p>Font One:</p>
-  <p class="titletext">
-   La Maison
-  </p>
-
-    <p>Font Two:</p>
-      <p class="bodytext">
-      Muli  This is the body text
-      </p>
-
-
-    <h4>ColorPalette</h4>
-    <img src="img/colorp.png" alt="here is a color pallette">
-
-    <h4>Potential Imagery</h4>
-    <div class="rowgrid">
-      <div class="column">
-        <img src="img/scissors.jpg">
-        <img src="img/diybag.jpg">
-        <img src="img/dryflower.jpg">
-        <img src="img/diylamp.jpg">
-        <img src="img/stickers.jpg">
-        <img src="img/ceramicvase.jpg">
-
-      </div>
-    </div>
-</section>
-    <!-- // BRANDING IDEAS SECTION -->
-<div class="footer">
-    <nav>
-      <ul>
-        <li><a href="styleguide.html"class="active_page">Styleguide</a></li>
-        <li><a href="citation.html">Citation</a></li>
-        <li><a href="https://github.com/ypa31/Project2company">Repository</a></li>
-      </ul>
-    </nav>
-    </div>
-
-  </body>
 </html>
